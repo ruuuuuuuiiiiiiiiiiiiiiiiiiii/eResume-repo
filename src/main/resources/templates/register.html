@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CGI - Laureles</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="row w-100 m-0">
+          <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
+            <div class="card col-lg-4 mx-auto">
+              <div class="card-body px-5 py-5">
+                <h3 class="card-title text-left mb-3">Register</h3>
+                <form th:action="@{/registration}" method = "post" th:object = "${user}">
+                  <div class="form-group">
+                    <label class = "control-label" for = "firstName">Name</label>
+                    <input id = "name" class = "form-control" field = "*{name}" name = "name" required autofocus = "autofocus">
+                  </div>                  
+                  <div class="form-group">
+                    <label class = "control-label" for = "email">Email</label>
+                    <input id = "email" class = "form-control" field = "*{email}" name = "email" required autofocus = "autofocus">
+                  </div>
+                  <div class="form-group">
+                    <label label class = "control-label" for = "userName">User Name</label>
+                    <input id = "userName" class = "form-control" field = "*{userName}" name = "userName" required autofocus = "autofocus">
+                  </div>                  
+                  <div class="form-group">
+                    <label class = "control-label" for = "password">Password</label>
+                    <input  id = "password" class = "form-control" type = "password" field = "*{password}" name = "password" required autofocus = "autofocus">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary btn-block enter-btn">Register</button>
+                  </div>
+                  <p class="sign-up text-center">Already have an Account?<a href = "/" th:href = "@{/login}"> Login here </a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+        </div>
+        <!-- row ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <script src="../../assets/js/settings.js"></script>
+    <script src="../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+  </body>
+</html>

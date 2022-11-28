@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>CGI-DEMO</title>
+<link rel="stylesheet" 
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+	crossorigin="anonymous">
+</head>
+<body>
+
+
+<br>	
+<br>
+<br>	
+<br>
+<br>
+
+
+	<div class = container>
+		<div class = "row">
+			<div class = "col-lg-6 col-md-6 col-sm-6 container justify-content-center card">
+				<h1 class = "test-center"> Create New Career Objective</h1>
+				<div class = "card-body">
+					<form th:action="@{/careerobj}" th:object = "${careerobj}" method="POST">
+						<div class = "form-group">
+							<label> Objective Name</label>
+							<input
+							type = "text"
+							name = "name"
+							field = "*{name}"
+							class = "form-control"
+							placeholder = "Enter Objective Name"
+							/>
+						</div>
+						
+						<div class = "form-group">
+							<label> Description</label>
+							<textarea maxlength="1000" class="form-control" type = "text" name = "description" field = "*{description}" rows="4" placeholder = "Enter Description"></textarea>
+						</div>
+						
+						<div class = "form-group">
+							<label> Reason</label>
+							<textarea maxlength="1000" class="form-control" type = "text" name = "reason" field = "*{reason}" rows="4" placeholder = "Enter Reason"></textarea>
+						</div>
+						<div class = "form-group">
+							<label> Target Date</label>
+							<input
+							type = "text"
+							name = "targetDate"
+							field = "*{targetDate}"
+							class = "form-control"
+							placeholder = "Enter Target Date (yyyy/mm/dd)"
+							/>
+						</div>
+						<div class = "form-group">
+							<label> Completed Date</label>
+							<input
+							type = "text"
+							name = "completedDate"
+							field = "*{completedDate}"
+							class = "form-control"
+							placeholder = "Enter Completed Date (yyyy/mm/dd)"
+							/>
+						</div>
+						
+						<div class = "box-footer">
+							<button type = "submit" class = "btn btn-primary">
+								Submit
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
