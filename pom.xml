@@ -8,11 +8,11 @@
 		<version>2.7.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.mll.demo</groupId>
-	<artifactId>student-management-system</artifactId>
+	<groupId>com.laureles</groupId>
+	<artifactId>cgi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>student-management-system</name>
-	<description>Student Management System using Spring Boot and Thymeleaf - DemoMLL </description>
+	<name>cgi</name>
+	<description>CGI PH: Technical Exam - Junior Java Developer </description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>
