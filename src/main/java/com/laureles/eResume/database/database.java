@@ -1,4 +1,4 @@
-package com.laureles.cgi.database;
+package com.laureles.eResume.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package com.laureles.cgi.controller;
+package com.laureles.eResume.controller;
 
 
 
@@ -8,9 +8,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.laureles.cgi.database.database;
-import com.laureles.cgi.entity.Login;
-import com.laureles.cgi.repository.LoginRepository;
+import com.laureles.eResume.database.database;
+import com.laureles.eResume.entity.Login;
+import com.laureles.eResume.repository.LoginRepository;
 
 
 @Controller

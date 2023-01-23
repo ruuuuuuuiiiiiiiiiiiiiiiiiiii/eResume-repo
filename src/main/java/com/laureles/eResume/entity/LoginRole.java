@@ -1,4 +1,4 @@
-package com.laureles.cgi.entity;
+package com.laureles.eResume.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

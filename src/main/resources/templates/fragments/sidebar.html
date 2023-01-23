@@ -1,44 +1,53 @@
-<nav class="sidebar sidebar-offcanvas" id="sidebar" th:fragment="sidebar">	
-        <ul class="nav">
-          <li class="nav-item profile">
-            <div class="profile-desc">
-              <div class="profile-pic">
-                <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="/assets/images/faces/user_w.png" alt="">
-                  
-                </div>
-                <div class="profile-name">
-                <h5 class="mb-0 font-weight-normal" sec:authentication = "principal.username"></h5>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="nav-item nav-category">
-            <span class="nav-link">Navigation</span>
-          </li>
-          <li class="nav-item menu-items">
-          	<a class="nav-link" href = "#" th:href = "@{/}">
-              <span class="menu-icon">
-                <i class="mdi mdi-speedometer"></i>
-              </span>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items">
-            <a class="nav-link" th:href = "@{/careerobj}">
-              <span class="menu-icon">
-                <i class="mdi mdi-file-document-box"></i>
-              </span>
-              <span class="menu-title">Career Objectives</span>
-            </a>
-          </li>
-          <li class="nav-item menu-items" th:class="${#strings.equals( pageTitle, 'Profile | CGI-DEMO')} ? 'active nav-item menu-items' : 'nav-item menu-items'">
-            <a class="nav-link" href="/profile">
-              <span class="menu-icon">
-                <i class="mdi mdi-account"></i>
-              </span>
-                <span class="menu-title">Profile</span>
-            </a>
-        </li>
-        </ul>
+<nav class="sidebar sidebar-offcanvas" id="sidebar" th:fragment="sidebar">
+  <ul class="nav">
+    <li class="nav-item profile">
+      <div class="profile-desc">
+        <div class="profile-pic">
+          <div class="count-indicator">
+            <img
+              class="img-xs rounded-circle"
+              src="/assets/images/faces/user_w.png"
+              alt=""
+            />
+          </div>
+          <div class="profile-name">
+            <h5
+              class="mb-0 font-weight-normal"
+              sec:authentication="principal.username"
+            ></h5>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item nav-category">
+      <span class="nav-link">Navigation</span>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" href="#" th:href="@{/}">
+        <span class="menu-icon">
+          <i class="mdi mdi-speedometer"></i>
+        </span>
+        <span class="menu-title">Dashboard</span>
+      </a>
+    </li>
+    <li class="nav-item menu-items">
+      <a class="nav-link" th:href="@{/careerobj}">
+        <span class="menu-icon">
+          <i class="mdi mdi-file-document-box"></i>
+        </span>
+        <span class="menu-title">Career Objectives</span>
+      </a>
+    </li>
+    <li
+      class="nav-item menu-items"
+      th:class="${#strings.equals( pageTitle, 'Profile | eResume')} ? 'active nav-item menu-items' : 'nav-item menu-items'"
+    >
+      <a class="nav-link" href="/profile">
+        <span class="menu-icon">
+          <i class="mdi mdi-account"></i>
+        </span>
+        <span class="menu-title">Profile</span>
+      </a>
+    </li>
+  </ul>
 </nav>

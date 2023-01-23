@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.laureles</groupId>
-	<artifactId>cgi</artifactId>
+	<artifactId>eResume</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>cgi</name>
-	<description>CGI PH: Technical Exam - Junior Java Developer </description>
+	<description>Mark Louie Laureles - Online resume</description>
 	<properties>
 		<java.version>18</java.version>
 	</properties>

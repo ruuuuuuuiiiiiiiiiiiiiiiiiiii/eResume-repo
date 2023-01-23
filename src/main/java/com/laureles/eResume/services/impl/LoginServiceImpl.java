@@ -1,4 +1,4 @@
-package com.laureles.cgi.services.impl;
+package com.laureles.eResume.services.impl;
 
 import java.util.Arrays;
 import java.util.Collection;
@@ -13,10 +13,10 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.laureles.cgi.entity.Login;
-import com.laureles.cgi.entity.LoginRole;
-import com.laureles.cgi.repository.LoginRepository;
-import com.laureles.cgi.services.LoginService;
+import com.laureles.eResume.entity.Login;
+import com.laureles.eResume.entity.LoginRole;
+import com.laureles.eResume.repository.LoginRepository;
+import com.laureles.eResume.services.LoginService;
 
 
 

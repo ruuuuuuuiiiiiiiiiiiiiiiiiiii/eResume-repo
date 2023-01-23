@@ -1,10 +1,10 @@
-package com.laureles.cgi.services;
+package com.laureles.eResume.services;
 
 import java.util.List;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-import com.laureles.cgi.entity.Login;
+import com.laureles.eResume.entity.Login;
 
 
 public interface LoginService extends UserDetailsService{

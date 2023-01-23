@@ -1,1 +1,1 @@
-create database cgi_database;
+create database eResume_database;

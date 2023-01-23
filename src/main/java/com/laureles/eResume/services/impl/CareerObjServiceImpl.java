@@ -1,12 +1,12 @@
-package com.laureles.cgi.services.impl;
+package com.laureles.eResume.services.impl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.laureles.cgi.entity.CareerObj;
-import com.laureles.cgi.repository.CareerObjRepository;
-import com.laureles.cgi.services.CareerObjService;
+import com.laureles.eResume.entity.CareerObj;
+import com.laureles.eResume.repository.CareerObjRepository;
+import com.laureles.eResume.services.CareerObjService;
 
 @Service
 public class CareerObjServiceImpl implements CareerObjService{

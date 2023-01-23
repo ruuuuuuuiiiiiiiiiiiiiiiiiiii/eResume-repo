@@ -1,8 +1,8 @@
-package com.laureles.cgi.repository;
+package com.laureles.eResume.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.laureles.cgi.entity.CareerObj;
+import com.laureles.eResume.entity.CareerObj;
 
 public interface CareerObjRepository extends JpaRepository<CareerObj, Long> {
 

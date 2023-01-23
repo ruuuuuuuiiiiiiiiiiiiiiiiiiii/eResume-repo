@@ -1,8 +1,8 @@
-package com.laureles.cgi.services;
+package com.laureles.eResume.services;
 
 import java.util.List;
 
-import com.laureles.cgi.entity.CareerObj;
+import com.laureles.eResume.entity.CareerObj;
 
 public interface CareerObjService {
 	
